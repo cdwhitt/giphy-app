@@ -1,3 +1,5 @@
-#Giphy Search App
+# Giphy Search App
 
-https://caseys-giphy-app.netlify.app/
+> Simple gif search app that utilizes the Giphy API
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc85d9f3-ff45-448b-870b-40b33607c380/deploy-status)](https://app.netlify.com/sites/caseys-giphy-app/deploys)
