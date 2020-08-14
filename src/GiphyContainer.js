@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Container, Grid, Header, Icon } from "semantic-ui-react";
+import { Container, Grid, Header, Icon, Image } from "semantic-ui-react";
 
 import { FavoritesContainer } from "./FavoritesContainer";
 import { GiphyResultsContainer } from "./GiphyResultsContainer";
@@ -44,6 +44,14 @@ export const GiphyContainer = () => {
       <Header as="h1" textAlign="center" icon>
         <Icon name="image outline" />
         Giphy Search Engine
+        <Header.Subheader>
+          Powered by{" "}
+          <Image
+            size="tiny"
+            spaced
+            src="https://support.giphy.com/hc/article_attachments/360019416111/dlLogo.png"
+          />
+        </Header.Subheader>
       </Header>
 
       <Grid>
