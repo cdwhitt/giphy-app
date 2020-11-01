@@ -1,5 +1,5 @@
 import React from "react"
-import { Header, Image } from "semantic-ui-react"
+import { Header, Image, Message } from "semantic-ui-react"
 import { Favorite } from "./Favorite"
 
 interface FavoritesProps {
@@ -15,7 +15,12 @@ export const Favorites: React.FC<FavoritesProps> = ({ favorites }) => {
 			<Header as="h3" textAlign="center">
 				My Favorite GIFs
 			</Header>
-			<Image.Group size="tiny">{favorites && favoritesList}</Image.Group>
+			<Image.Group size="tiny">{favoritesList}</Image.Group>
+			{favorites.length === 0 && (
+				<Message info size="tiny">
+					You haven't added any GIFs to your favorites yet!
+				</Message>
+			)}
 		</>
 	)
 }
