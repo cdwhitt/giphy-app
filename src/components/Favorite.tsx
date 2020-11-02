@@ -16,7 +16,7 @@ export const Favorite: React.FC<FavoriteProps> = ({ favorite }) => {
 				<Image
 					verticalAlign="top"
 					bordered
-					src={images.preview_webp.url}
+					src={images.preview_gif.url}
 					style={{ cursor: "pointer" }}
 					rounded
 				/>
